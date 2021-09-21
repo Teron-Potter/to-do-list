@@ -1,0 +1,36 @@
+Project: To-Do List
+(remember to keep HTML valid)
+
+//Backlog Refinement//
+
+//Week 1//=======================================================================================================
+Item 1: Display a rectangle //1
+DOD: To clearly distinguish a rectangle on the DOM, whether by shadows, or background, or border or combo thereof
+
+Item 2: Display a header in Item 1 //1
+Blockers: Item 1
+DOD: Title is clearly visible at the top of rectangle, and has a distinctive design
+
+Item 3: Display Item List (No Logic\Mockup) //2
+Blockers: Item 1
+DOD: Display a list of hardcoded items underneath the header, with distinctive design, accommodate for large quantity of text.
+
+=================================================================================================================
+
+//Week 2//=======================================================================================================
+Item 4: Distinguish between Non\Completed (No Logic\Mockup) //1
+Blockers: Item 3
+DOD: User can clearly delineate between complete and non-complete items through way of distinct visual cue.
+
+Item 5: Each Item has a delete option (No Logic\Mockup) //1
+Blockers: Item 3
+DOD: Each list item has a button that (looks like it will) remove the item from the list
+
+
+=================================================================================================================
+
+Item 6: Default array for list items
+Item 7: Functional user input for array additions (New Item)
+Functional user input for array removals (Delete Item)
+Functional method to change item from Non\Completed (Array item property toggle)
+Visual cue for Non\Complete property

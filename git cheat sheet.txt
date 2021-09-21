@@ -1,0 +1,34 @@
+Initialize git, do stuff, git add . OR git add "thing", git commit, goto: do stuff
+
+Best practices
+First commit comment "Initial Commit"
+
+git init //starts repo
+
+//to remove in windows just delete .git through explorer
+//Caution Terminal delete option can delete system files if you do it wrong! Delete git folder while navigated to dir "rm ./.git -rf"
+
+git add . 
+    // adds everything to stage
+git add "filename" 
+    // adds one specific file
+git status 
+    // check to see what's in the staging area
+git commit -m "Add Commit Comment Here"
+    //Should be less than 80 char. and be present tense
+git log 
+    //view list of commits
+git log --oneline 
+    //condensed view of log
+git checkout "ID from log" 
+    //detach head and look at other commit
+git checkout "branch name" 
+    //return to branch head
+git branch 
+    // list branches
+git checkout -b 
+    // makes a new branch
+git branch -d "name" 
+    //(soft) delete branch only works if merged
+git branch -D "name" 
+    //Force delete any circumstance
