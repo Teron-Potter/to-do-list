@@ -1,7 +1,37 @@
+/*font-family: 'Open Sans', sans-serif;*/
+
+
 body {
-    background-color: green;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    background-color: #333333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 #greaterBox {
-    background-color: red;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    width: 400px;
+    height: 600px;
+    background-image: linear-gradient(#FFFFFF, #FAFAFA);
+}
+
+#headerBox {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
 }
