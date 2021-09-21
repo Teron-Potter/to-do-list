@@ -1,1 +1,1 @@
-alert("Javascript has been included successfully");
+//alert("Javascript has been included successfully");
