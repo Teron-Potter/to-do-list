@@ -46,7 +46,11 @@ ul {
     background-image: linear-gradient(#e0ffe4, #9effbe);
 }
 
-/*Icon provided by: https://css.gg/trash*/
+.deleteButton {
+    float: right;
+}
+
+/* Icon provided by: https://css.gg/trash */
 .gg-trash {
     box-sizing: border-box;
     position: relative;
