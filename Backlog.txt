@@ -25,8 +25,6 @@ DOD: User can clearly delineate between complete and non-complete items through 
 Item 5: Each Item has a delete option (No Logic\Mockup) //1
 Blockers: Item 3
 DOD: Each list item has a button that (looks like it will) remove the item from the list
-
-
 =================================================================================================================
 
 Item 6: Default array for list items
