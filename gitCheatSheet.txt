@@ -32,3 +32,7 @@ git branch -d "name"
     //(soft) delete branch only works if merged
 git branch -D "name" 
     //Force delete any circumstance
+git push
+    //Push things to remote (GitHub
+live-server
+    //It's a liver server... what?
