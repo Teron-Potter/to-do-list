@@ -27,10 +27,17 @@ Blockers: Item 3
 DOD: Each list item has a button that (looks like it will) remove the item from the list
 =================================================================================================================
 
+Item 7: Display a form for adding new items (Only visual) // 1
+DOD: Form is visible underneath the main rectangle,
+    the form contains a text field and submit button,
+    the form responds to ENTER as well as click,
+    form has distinctive style matching overall style of the app
+
+
 Item 6: Default array for list items
 DOD: Structure contains initial data, data is rendered in the main div on page load, all items should show their respective status
 
-let tasks = [{
+const tasks = [{
     content: "Take out the trash.",
     completed: true
   }, {
@@ -41,21 +48,24 @@ let tasks = [{
     completed: false
 }];
 
-Item 6.1: Learn to add items to an html list
-DOD: Demonstrate an ability to programmatically add item to html list. The item should contain the description as well as completed/uncompleted status
-Item 6.2: Write a function that takes the title and status and adds item to a html list -> DOM manip happens here
-DOD: Function exists and can be demonstrated
-Item 6.3: Decide on a structure and move initial data into the structure
-DOD: data is in the structure
-Item 6.4: Iterate through a structure on page load and populate HTML list using the function from 6.2 -> Possible spike 2
+Item 6.1: Learn to add items to an html list, Write a function that takes the title and status and adds item to a html list -> DOM manip happens here // 3
+DOD: Function exists and can be demonstrated Function takes the title and status and adds item to a html list -> DOM manip happens here
+renderItem("do a thing", false) -> this will add an item at the bottom of the list in HTML
 
-Item 7: Display a form for adding new items (Only visual) // 1
-DOD: Form is visible underneath the main rectangle,
-    the form contains a text field and submit button,
-    the form responds to ENTER as well as click,
-    form has distinctive style matching overall style of the app
+Item 6.4: Write a function that renders the list to the DOM. Iterate through a structure on page load and populate HTML list using the function from 6.1 //2
+Blocked by 6.1
+DOD function exists and renders the data
+HTML list starts empty and is populated by data from the structure on page load
+renderAll(tasks) -> this will display items in the list (the function should auto run at load)
 
-Item 8: Write a function that takes input from form in 7, adds the new item to the structure (6) and re-renders the list (6.4)
+
+Item 8: Write a function that takes input from form in 7, adds the new item to the structure (6) and re-renders the list (6.4) //2
+addNewItem("content") -> add the item to the data structure with completed set to false, clear the list in the dom, call renderAll
+
+Item 11: Connect function in Item 8 to a form in item 7 and add basic validation (cannot be blank cannot be bigger than X chars, trim the edges)
+
 
 Item 9: Functional user input for array removals (Delete Item)
 Item 10: Functional method to change item from Non\Completed (Array item property toggle)
+
+
