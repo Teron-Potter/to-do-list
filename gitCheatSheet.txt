@@ -26,8 +26,10 @@ git checkout "branch name"
     //return to branch head
 git branch 
     // list branches
-git checkout -b 
+git checkout -b branchName
     // makes a new branch
+git push -u origin branchName
+    //links branch to remote and pushes it
 git branch -d "name" 
     //(soft) delete branch only works if merged
 git branch -D "name" 
