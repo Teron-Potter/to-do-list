@@ -1,6 +1,4 @@
 /*font-family: 'Open Sans', sans-serif;*/
-
-
 body {
     margin: 0px;
     padding: 0px;
@@ -14,36 +12,83 @@ ul {
     margin: 0px 0px;
 }
 
+input[type=text] {
+    width: 65%;
+    padding: 2px 2px;
+    margin: 0px 8px 0px -4px;
+    border: none;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    color: #858585;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+input[type=submit] {
+    width: 25%;
+    padding: 2px 8px;
+    margin: 0px 0px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+input[type=submit]:hover {
+    width: 25%;
+    padding: 2px 8px;
+    margin: 0px 0px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
 #greaterBox {
     margin: 0px 0px;
     padding: 0px 0px;
     width: 400px;
     height: 600px;
-    background-image: linear-gradient(#FFFFFF, #FAFAFA);
+    background-image: linear-gradient(to bottom right, #f8f8f8, #e9e9e9);
 }
 
 #headerBox {
-    margin: 0px 0px;
+    margin: 0px 0px 2px 0px;
     padding: 0px 0px;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
     color: #000000;
     background-color: #F2F2F2;
+    border-bottom: 1px solid #000000;
+}
+
+.formDiv {
+    padding: 8px 8px;
+    font-size: 16px;
+    background-image: linear-gradient(#bdbdbd, #666666);
 }
 
 .itemDefault {
     padding: 8px 8px;
-    border-radius: 4px;
+    margin: 8px 0px;
     font-size: 16px;
-    background-image: linear-gradient(#f8f8f8, #e9e9e9);
+    background-image: linear-gradient(to bottom right, #f8f8f8, #e9e9e9);
+    box-shadow: 2px solid black;
 }
 
 .itemComplete {
     padding: 8px 8px;
-    border-radius: 4px;
     font-size: 16px;
-    background-image: linear-gradient(#e0ffe4, #9effbe);
+    background-image: linear-gradient(to bottom right, #e0ffe4, #9effbe);
 }
 
 .deleteButton {
@@ -65,23 +110,20 @@ ul {
         inset 2px 0 0;
     border-bottom-left-radius: 1px;
     border-bottom-right-radius: 1px;
-    margin-top: 4px
-}
+    margin-top: 4px}
 .gg-trash::after,
 .gg-trash::before {
     content: "";
     display: block;
     box-sizing: border-box;
-    position: absolute
-}
+    position: absolute}
 .gg-trash::after {
     background: currentColor;
     border-radius: 3px;
     width: 16px;
     height: 2px;
     top: -4px;
-    left: -5px
-}
+    left: -5px}
 .gg-trash::before {
     width: 10px;
     height: 4px;
@@ -90,5 +132,4 @@ ul {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     top: -7px;
-    left: -2px
-}
+    left: -2px}
