@@ -12,13 +12,30 @@
 // }];
 
 function readForm() {
-    var x = document.getElementById("addForm");
-    var text = "";
-    var i;
-    for (i = 0; i < x.length ; i++) {
-        text += x.elements[i].value;
-    }
-    console.log(text);
+  const formElement = document.querySelector("#addForm");
+  console.dir(formElement[0].value);
 }
+
+function addElement(newTitle) {
+  const newElement = document.createElement("li");
+  newElement.innerHTML = `
+    <div class="item itemDefault">
+      ${newTitle}
+      <div class="deleteButton">
+        <img src="./images/trash.svg" alt="Delete Button" />
+      </div>
+    </div>
+  `;
+  const listElement = document.querySelector("#itemList ul");
+  if (listElement) {
+    listElement.appendChild(newElement);
+  }
+}
+
+addElement("have buttsecks");
+addElement("have buttsecks");
+addElement("have buttsecks");
+addElement("have buttsecks");
+addElement("have buttsecks");
 
 window.onload = readForm();

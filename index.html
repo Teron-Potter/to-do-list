@@ -1,56 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Some assets provided by https://css.gg -->
 
-<!-- Some assets provided by https://css.gg -->
-
-<head>
+  <head>
     <title>To Do List</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="main.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script defer src="main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div id="greaterBox">
-        <div id="headerBox">
-            ToDo List+
+      <div id="headerBox">ToDo List+</div>
+      <div id="itemList">
+        <ul>
+          <li>
+            <div class="item itemComplete">
+              Take out the trash.
+              <div class="deleteButton">
+                <img src="./images/trash.svg" alt="Delete Button" />
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item itemDefault">
+              Brush your teeth.
+              <div class="deleteButton">
+                <img src="./images/trash.svg" alt="Delete Button" />
+              </div>
+            </div>
+          </li>          <li>
+            <div class="item itemDefault">
+              Brush your teeth.
+              <div class="deleteButton">
+                <img src="./images/trash.svg" alt="Delete Button" />
+              </div>
+            </div>
+          </li>          <li>
+            <div class="item itemDefault">
+              Brush your teeth.
+              <div class="deleteButton">
+                <img src="./images/trash.svg" alt="Delete Button" />
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item itemDefault">
+              Take over the world.
+              <div class="deleteButton">
+                <img src="./images/trash.svg" alt="Delete Button" />
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="formDiv">
+          <form id="addForm">
+            <input
+              id="addForm"
+              type="text"
+              placeholder="Type new task here."
+            />
+            <button id="addButton" type="submit">Add Task</button>
+          </form>
         </div>
-        <div id="itemList">
-            <ul>
-                <li>
-                    <div class="itemComplete">Take out the trash.
-                        <div class="deleteButton">
-                            <img src="./images/trash.svg" alt="Delete Button">
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="itemDefault">Brush your teeth.
-                        <div class="deleteButton">
-                            <img src="./images/trash.svg" alt="Delete Button">
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="itemDefault">Take over the world.
-                        <div class="deleteButton">
-                            <img src="./images/trash.svg" alt="Delete Button">
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="formDiv">
-                        <form>
-                            <input id="addForm" type="text" value="Type new task here.">
-                            <input id="addButton" type="submit" value="Add Task">
-                        </form>
-                    </div>
-                </li>
-            </ul>
-        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
