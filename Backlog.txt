@@ -69,3 +69,49 @@ Item 9: Functional user input for array removals (Delete Item)
 Item 10: Functional method to change item from Non\Completed (Array item property toggle)
 
 
+
+
+
+
+/// SPRINT 2
+
+Spike1: Learn to manipulate DOM elements with JS   READ-SEARCH-TINKER-ASK  //5 PT spike
+Selecting elements for manipulation
+Creating new elements in memory
+Appending new elements to the DOM
+Cloning elements
+Deleting elements
+Modifying element content
+Adding and removing classes from a DOM element
+DOD: "Be able to demonstrate all of these actions in JS using any arbitrary DOM
+
+Spike2: Learn functions //3 PT spike 
+Must be familiar with the following topics/terms
+Function declaration
+Function parameter list
+Function arguments
+Function return value
+Using function calls in expressions
+Function call
+What does hoisting mean
+Arrow functions
+functions as variables
+GOTCHA = a lot of programmers haphazardly mis-use parameters and arguments
+MUST BE ABLE TO TELL A CALL FROM A DECLARATION AT A GLANCE
+DOD: "Be able to demonstrate all of the above concents but most importantly be able to declare a function according to signature (name and params),
+be able to call and earlier declared function
+
+
+
+
+Spike3: Learn logical constructs
+Be familiar with the following topics
+conditionals (<, >, ===, !==, <=, >=)
+if statements
+while loops
+for loops
+
+
+
+8 points
+
