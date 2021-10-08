@@ -1,9 +1,10 @@
-/*font-family: 'Open Sans', sans-serif;*/
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #333333;
+  background-color: #a6bce4;
+  color: #000000;
   font-family: "Open Sans", sans-serif;
+  font-size: 12px;
 }
 
 ul {
@@ -12,23 +13,71 @@ ul {
   margin: 0px 0px;
 }
 
-input[type="text"] {
+input[type="text"]:focus {
+  outline: none;
+}
+
+#greaterBox {
+  width: 700px;
+  height: 600px;
+  background-image: linear-gradient(to bottom right, #f8f8f8, #e9e9e9);
+}
+
+#headerBox {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  border-bottom: 2px solid #000000;
+}
+
+.item {
+  padding: 10px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #8f8f8f;
+  border: solid red;
+}
+
+.itemDefault {
+  background-image: linear-gradient(to bottom right, #f8f8f8, #e9e9e9);
+}
+
+.itemDefault:hover {
+  background-image: linear-gradient(to bottom right, #FFFFFF, #FFFFFF);
+}
+
+.itemComplete {
+  background-image: linear-gradient(to bottom right, #e0ffe4, #9effbe);
+}
+
+.itemComplete:hover {
+  background-image: linear-gradient(to bottom right, #9effbe, #9effbe);
+}
+
+.deleteButton {
+  float: right;
+  border: solid red;
+}
+
+.formDiv {
+  padding: 8px 8px;
+  font-size: 16px;
+  background-image: linear-gradient(#bdbdbd, #666666);
+}
+
+#addForm {
   width: 65%;
   padding: 2px 2px;
   margin: 0px 8px 0px -4px;
   border: none;
   border: 2px solid #ffffff;
   border-radius: 2px;
-  color: #858585;
   /* font-family: "Open Sans", sans-serif; */
   font-size: 16px;
 }
 
-input[type="text"]:focus {
-  outline: none;
-}
-
-button {
+#addButton {
   width: 25%;
   padding: 2px 8px;
   margin: 0px 0px;
@@ -40,7 +89,7 @@ button {
   /* box-sizing: border-box; */
 }
 
-button[type="submit"]:hover {
+#addButton:hover {
   width: 25%;
   padding: 2px 8px;
   margin: 0px 0px;
@@ -50,48 +99,4 @@ button[type="submit"]:hover {
   color: #ffffff;
   font-size: 16px;
   cursor: pointer;
-}
-
-#greaterBox {
-  margin: 0px 0px;
-  padding: 0px 0px;
-  width: 400px;
-  height: 600px;
-  background-image: linear-gradient(to bottom right, #f8f8f8, #e9e9e9);
-}
-
-#headerBox {
-  margin: 0px 0px 2px 0px;
-  padding: 0px 0px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: #000000;
-  background-color: #f2f2f2;
-  border-bottom: 1px solid #000000;
-}
-
-.formDiv {
-  padding: 8px 8px;
-  font-size: 16px;
-  background-image: linear-gradient(#bdbdbd, #666666);
-}
-
-.item {
-  padding: 8px 8px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.itemDefault {
-  /* background-image: linear-gradient(to bottom right, #f8f8f8, #161414); */
-  background-image: linear-gradient(to bottom right, #f8f8f8, #e9e9e9);
-}
-
-.itemComplete {
-  background-image: linear-gradient(to bottom right, #e0ffe4, #9effbe);
-}
-
-.deleteButton {
-  float: right;
 }
