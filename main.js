@@ -36,6 +36,7 @@
 
 // window.onload = readForm();
 
+console.log('Hello World!');
 
 
 
