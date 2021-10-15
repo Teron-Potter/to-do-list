@@ -26,4 +26,4 @@ Item 7: Display a form for adding new items (Only visual) // 1
 DOD: Form is visible underneath the main rectangle,
     the form contains a text field and submit button,
     the form responds to ENTER as well as click,
-    form has distinctive style matching overall style of the app
+    form has distinctive style matching overall style of the app 
