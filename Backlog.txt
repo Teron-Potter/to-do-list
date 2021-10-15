@@ -3,39 +3,22 @@ Project: To-Do List
 
 //Backlog Refinement//
 
-//Week 1//=======================================================================================================
-Item 1: Display a rectangle //1
-DOD: To clearly distinguish a rectangle on the DOM, whether by shadows, or background, or border or combo thereof
 
-Item 2: Display a header in Item 1 //1
-Blockers: Item 1
-DOD: Title is clearly visible at the top of rectangle, and has a distinctive design
+3s1 write a function that adds an item to the DOM   // 2
+Function will have the signature of appendNewItemToDom(itemDescription: string, completed: boolean = false) -> void
+DoD:
+you can call appendNewItemToDom("get bread"); a new item appears in the list with uncomopleted status
+calling appendNewItemToDom("get bread, true); a new item appears in the list with completed status
 
-Item 3: Display Item List (No Logic\Mockup) //2
-Blockers: Item 1
-DOD: Display a list of hardcoded items underneath the header, with distinctive design, accommodate for large quantity of text.
-
-=================================================================================================================
-
-//Week 2//=======================================================================================================
-Item 4: Distinguish between Non\Completed (No Logic\Mockup) //1
-Blockers: Item 3
-DOD: User can clearly delineate between complete and non-complete items through way of distinct visual cue.
-
-Item 5: Each Item has a delete option (No Logic\Mockup) //1
-Blockers: Item 3
-DOD: Each list item has a button that (looks like it will) remove the item from the list
-=================================================================================================================
-
-Item 7: Display a form for adding new items (Only visual) // 1
-DOD: Form is visible underneath the main rectangle,
-    the form contains a text field and submit button,
-    the form responds to ENTER as well as click,
-    form has distinctive style matching overall style of the app
+Special case: list is completely empty before call
 
 
-Item 6: Default array for list items
-DOD: Structure contains initial data, data is rendered in the main div on page load, all items should show their respective status
+3s2 item rendering should not be hardcoded in HTML, but rather in JS // 3
+Move data to the data sturcture as indicated below
+write a function to iterate over the structure and call appendNewItemToDom to append itemns to the list
+call the function on load
+function sigature is loadData(data: <object defined below>) -> void
+Blocked by: 3s1
 
 const tasks = [{
     content: "Take out the trash.",
@@ -47,6 +30,33 @@ const tasks = [{
     content: "Take over the world.",
     completed: false
 }];
+
+DoD as website loads, the list of items is displayed that hasn't been hardcoded into HTML // 5
+
+3s3: Spike: learn about HTML evens and handling them
+Must be familiar with the following
+Passing functions as arguments (higher order functions)
+Functions that are called outside of context
+attacking handlers to specific events
+"click", "submit", "scroll" basic events
+Event data structure
+Accessing the dom element after event dispatch
+Reading values from form field element
+DoD: be able to confidently attach an event handler to any element and explain a possible use case
+
+
+
+3s4: create a handler for "add new item" form   // 2
+create function handleNewItem and connect it to the form
+The function should collect values from the form and call function from 3s1
+blocked by 3s1, 3s3
+DoD: when the field is filled in and the button is clicked, the new item should appear at the bottom of the list, the page should NOT reload
+
+Item 6: Default array for list items
+DOD: Structure contains initial data, data is rendered in the main div on page load, all items should show their respective status
+
+==================END OF REFINEMENT
+
 
 Item 6.1: Learn to add items to an html list, Write a function that takes the title and status and adds item to a html list -> DOM manip happens here // 3
 DOD: Function exists and can be demonstrated Function takes the title and status and adds item to a html list -> DOM manip happens here
@@ -73,33 +83,7 @@ Item 10: Functional method to change item from Non\Completed (Array item propert
 
 
 
-/// SPRINT 2
 
-Spike1: Learn to manipulate DOM elements with JS   READ-SEARCH-TINKER-ASK  //5 PT spike
-Selecting elements for manipulation
-Creating new elements in memory
-Appending new elements to the DOM
-Cloning elements
-Deleting elements
-Modifying element content
-Adding and removing classes from a DOM element
-DOD: "Be able to demonstrate all of these actions in JS using any arbitrary DOM
-
-Spike2: Learn functions //3 PT spike 
-Must be familiar with the following topics/terms
-Function declaration
-Function parameter list
-Function arguments
-Function return value
-Using function calls in expressions
-Function call
-What does hoisting mean
-Arrow functions
-functions as variables
-GOTCHA = a lot of programmers haphazardly mis-use parameters and arguments
-MUST BE ABLE TO TELL A CALL FROM A DECLARATION AT A GLANCE
-DOD: "Be able to demonstrate all of the above concents but most importantly be able to declare a function according to signature (name and params),
-be able to call and earlier declared function
 
 
 
