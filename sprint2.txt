@@ -1,13 +1,14 @@
 /// SPRINT 2
 
 Spike1: Learn to manipulate DOM elements with JS   READ-SEARCH-TINKER-ASK  //5 PT spike
-Selecting elements for manipulation
-Creating new elements in memory
-Appending new elements to the DOM
-Cloning elements
-Deleting elements
-Modifying element content
+// Selecting elements for manipulation .queryselector
+// Creating new elements in memory .createElement
+// Appending new elements to the DOM .appendChild
+// Cloning elements .cloneNode
+// Deleting elements .removeChild
+// Modifying element content .innerHTML
 Adding and removing classes from a DOM element
+Modifying the attributes
 DOD: "Be able to demonstrate all of these actions in JS using any arbitrary DOM
 
 Spike2: Learn functions //3 PT spike 
