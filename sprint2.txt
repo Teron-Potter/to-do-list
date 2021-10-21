@@ -9,6 +9,10 @@ Spike1: Learn to manipulate DOM elements with JS   READ-SEARCH-TINKER-ASK  //5 P
 // Modifying element content .innerHTML
 Adding and removing classes from a DOM element
 Modifying the attributes
+  child.setAttribute("id", "stuff");
+  child.getAttribute("id");
+  childDiv.classList.add("list-item");
+  childDiv.classList.remove("list-item");
 DOD: "Be able to demonstrate all of these actions in JS using any arbitrary DOM
 
 Spike2: Learn functions //3 PT spike 
