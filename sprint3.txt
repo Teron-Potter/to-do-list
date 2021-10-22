@@ -4,7 +4,7 @@ DoD:
 you can call appendNewItemToDom("get bread"); a new item appears in the list with uncomopleted status
 calling appendNewItemToDom("get bread, true); a new item appears in the list with completed status
 
-3s3: Spike: learn about HTML events and handling them \\3
+//3s3: Spike: learn about HTML events and handling them \\3
 //Passing functions as arguments (higher order functions\ callbacks)
 //Functions that are called outside of context
 //attaching handlers to specific events
@@ -12,7 +12,7 @@ calling appendNewItemToDom("get bread, true); a new item appears in the list wit
 //Event data structure
 //Accessing the DOM element after event dispatch
 //Reading values from form field element
-DoD: be able to confidently attach an event handler to any element and explain a possible use case
+//DoD: be able to confidently attach an event handler to any element and explain a possible use case
 
 3s4: create a handler for "add new item" form   // 2
 create function handleNewItem and connect it to the form
