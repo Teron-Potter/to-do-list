@@ -43,7 +43,11 @@ console.log('Hello World!');
 
 
 
+document.addEventListener("click", () => {
+  console.log("click fired");
+});
 
+document.addEventListener("click", () => console.log("click fired"));
 
 
 

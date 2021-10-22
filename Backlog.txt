@@ -12,8 +12,7 @@ calling appendNewItemToDom("get bread, true); a new item appears in the list wit
 
 Special case: list is completely empty before call
 
-
-3s2 item rendering should not be hardcoded in HTML, but rather in JS // 3
+3s2 item rendering should not be hardcoded in HTML, but rather in JS // 5
 Move data to the data sturcture as indicated below
 write a function to iterate over the structure and call appendNewItemToDom to append itemns to the list
 call the function on load
@@ -31,20 +30,18 @@ const tasks = [{
     completed: false
 }];
 
-DoD as website loads, the list of items is displayed that hasn't been hardcoded into HTML // 5
+DoD as website loads, the list of items is displayed that hasn't been hardcoded into HTML
 
-3s3: Spike: learn about HTML evens and handling them
+3s3: Spike: learn about HTML events and handling them \\3
 Must be familiar with the following
 Passing functions as arguments (higher order functions)
 Functions that are called outside of context
-attacking handlers to specific events
+attaching handlers to specific events
 "click", "submit", "scroll" basic events
 Event data structure
-Accessing the dom element after event dispatch
+Accessing the DOM element after event dispatch
 Reading values from form field element
 DoD: be able to confidently attach an event handler to any element and explain a possible use case
-
-
 
 3s4: create a handler for "add new item" form   // 2
 create function handleNewItem and connect it to the form
@@ -52,8 +49,23 @@ The function should collect values from the form and call function from 3s1
 blocked by 3s1, 3s3
 DoD: when the field is filled in and the button is clicked, the new item should appear at the bottom of the list, the page should NOT reload
 
+3s5: adjust styling for better user experience // 2
+DOD:
+items should be rectangular and distinct
+text should be easily readable
+item status should be distinct, use common knowledge symbolism for complete or incomplete (strikethough/green-red/icons) OR not AND
+Delete button should be clearly visible and obvious to it's function
+Add hover effects to line items, delete button, and add new button
+no unused/unstyled items or empty space
+
 Item 6: Default array for list items
 DOD: Structure contains initial data, data is rendered in the main div on page load, all items should show their respective status
+
+draft for future tickets
+
+* delete handler
+* status change handler
+* MVP deployment 
 
 ==================END OF REFINEMENT
 
