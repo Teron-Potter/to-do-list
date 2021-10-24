@@ -31,18 +31,19 @@ const appendNewTaskToDom = (taskInput, completed = false) => {
           <div class="deleteButton"><img src="./images/trash.svg" alt="Delete Button" /></div>
         </div>
         `;
-  } else
-  newListTask.innerHTML =
-    `
+  } else {
+    newListTask.innerHTML =
+      `
     <div class="task taskComplete">` +
-    taskInput +
-    `
+      taskInput +
+      `
     </div>
     <div class="controls">
       <div class="deleteButton"><img src="./images/trash.svg" alt="Delete Button" /></div>
     </div>
     `;
-  taskListUl.appendChild(newListTask);
+    taskListUl.appendChild(newListTask);
+  }
 };
 
 appendNewTaskToDom("git bread", false);
