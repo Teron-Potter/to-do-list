@@ -1,4 +1,4 @@
-//BLUE //YELLOW //PURPLE //RED //GREEN //Highligher Plugin settings.json uses regex that can be edited.
+//BLUE //YELLOW //PURPLE //GREEN //RED //Highligher Plugin settings.json uses regex that can be edited.
 
 //BLUE: 3s1 write a function that adds an item to the DOM {2}
 Function will have the signature of appendNewItemToDom(itemDescription: string, completed: boolean = false) -> void
