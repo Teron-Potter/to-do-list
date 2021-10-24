@@ -1,15 +1,14 @@
+//BLUE //YELLOW //PURPLE //GREEN //RED //Highligher Plugin settings.json uses regex that can be edited.
 Project: To-Do List
 (remember to keep HTML valid)
 
 //Backlog Refinement//
-
 
 3s1 write a function that adds an item to the DOM   // 2
 Function will have the signature of appendNewItemToDom(itemDescription: string, completed: boolean = false) -> void
 DoD:
 you can call appendNewItemToDom("get bread"); a new item appears in the list with uncomopleted status
 calling appendNewItemToDom("get bread, true); a new item appears in the list with completed status
-
 Special case: list is completely empty before call
 
 3s2 item rendering should not be hardcoded in HTML, but rather in JS // 5
@@ -69,6 +68,7 @@ draft for future tickets
 
 ==================END OF REFINEMENT
 
+Look into Font Awesome for Icons
 
 Item 6.1: Learn to add items to an html list, Write a function that takes the title and status and adds item to a html list -> DOM manip happens here // 3
 DOD: Function exists and can be demonstrated Function takes the title and status and adds item to a html list -> DOM manip happens here

@@ -11,70 +11,24 @@
 // //     completed: false
 // // }];
 
-// function readForm() {
-//   const formElement = document.querySelector("#addForm");
-//   console.dir(formElement[0].value);
-// }
+//appendNewTaskToDom(taskDescription: string, completed: boolean = false) -> void';
+const appendNewTaskToDom = () => {
+  const taskListUl = document.querySelector("#taskList");
+  if (!taskListUl) { 
+    console.log("Parent element not found");
+    return;
+  }
+  const newListTask = document.createElement("li");
+    newListTask.classList.add("flexBoxList");
+    newListTask.innerHTML = `
+      <div class="task taskDefault">
+        This is a test 1 2 3.
+      </div>
+      <div class="controls">
+        <div class="deleteButton"><img src="./images/trash.svg" alt="Delete Button" /></div>
+      </div>
+      `;
+    taskListUl.appendChild(newListTask);
+}
 
-// function addElement(newTitle) {
-//   const newElement = document.createElement("li");
-//   newElement.innerHTML = `
-//     <div class="item itemDefault">
-//       ${newTitle}
-//       <div class="deleteButton">
-//         <img src="./images/trash.svg" alt="Delete Button" />
-//       </div>
-//     </div>
-//   `;
-//   const listElement = document.querySelector("#itemList ul");
-//   if (listElement) {
-//     listElement.appendChild(newElement);
-//   }
-// }
-
-// addElement("Added by JS");
-
-// window.onload = readForm();
-
-console.log('Hello World!');
-
-
-
-
-
-
-document.addEventListener("click", () => {
-  console.log("click fired");
-});
-
-document.addEventListener("click", () => console.log("click fired"));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+appendNewTaskToDom();
