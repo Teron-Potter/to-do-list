@@ -12,7 +12,7 @@
 // // }];
 
 //appendNewTaskToDom(taskDescription: string, completed: boolean = false) -> void';
-const appendNewTaskToDom = () => {
+const appendNewTaskToDom = (taskInput, completed = false) => {
   const taskListUl = document.querySelector("#taskList");
   if (!taskListUl) { 
     console.log("Parent element not found");
@@ -20,15 +20,24 @@ const appendNewTaskToDom = () => {
   }
   const newListTask = document.createElement("li");
     newListTask.classList.add("flexBoxList");
+    if (!completed) {
+      newListTask.innerHTML = `
+        <div class="task taskDefault">` +
+          taskInput + `
+        </div>
+        <div class="controls">
+          <div class="deleteButton"><img src="./images/trash.svg" alt="Delete Button" /></div>
+        </div>
+        `;}
     newListTask.innerHTML = `
-      <div class="task taskDefault">
-        This is a test 1 2 3.
-      </div>
-      <div class="controls">
-        <div class="deleteButton"><img src="./images/trash.svg" alt="Delete Button" /></div>
-      </div>
-      `;
+    <div class="task taskComplete">` +
+      taskInput + `
+    </div>
+    <div class="controls">
+      <div class="deleteButton"><img src="./images/trash.svg" alt="Delete Button" /></div>
+    </div>
+    `;
     taskListUl.appendChild(newListTask);
 }
 
-appendNewTaskToDom();
+appendNewTaskToDom("git bread", true);
