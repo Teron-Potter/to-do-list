@@ -1,20 +1,21 @@
-3s1 write a function that adds an item to the DOM   // 2
+//BLUE //YELLOW //PURPLE //RED //GREEN //Highligher Plugin settings.json uses regex that can be edited.
+
+//BLUE: 3s1 write a function that adds an item to the DOM {2}
 Function will have the signature of appendNewItemToDom(itemDescription: string, completed: boolean = false) -> void
-DoD:
-you can call appendNewItemToDom("get bread"); a new item appears in the list with uncomopleted status
-calling appendNewItemToDom("get bread, true); a new item appears in the list with completed status
+DoD: you can call appendNewItemToDom("get bread"); a new item appears in the list with uncomopleted status
+  calling appendNewItemToDom("get bread, true); a new item appears in the list with completed status
 
-//3s3: Spike: learn about HTML events and handling them \\3
-//Passing functions as arguments (higher order functions\ callbacks)
-//Functions that are called outside of context
-//attaching handlers to specific events
-//"click", "submit", "scroll" basic events
-//Event data structure
-//Accessing the DOM element after event dispatch
-//Reading values from form field element
-//DoD: be able to confidently attach an event handler to any element and explain a possible use case
+//GREEN 3s3: Spike: learn about HTML events and handling them {3}
+Passing functions as arguments (higher order functions\ callbacks)
+Functions that are called outside of context
+attaching handlers to specific events
+"click", "submit", "scroll" basic events
+Event data structure
+Accessing the DOM element after event dispatch
+Reading values from form field element
+DoD: be able to confidently attach an event handler to any element and explain a possible use case
 
-3s4: create a handler for "add new item" form   // 2
+//BLUE 3s4: create a handler for "add new item" form {2}
 create function handleNewItem and connect it to the form
 The function should collect values from the form and call function from 3s1
 blocked by 3s1, 3s3
