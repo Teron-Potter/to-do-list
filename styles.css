@@ -42,17 +42,19 @@ input[type="text"]:focus {
 .controls {
   padding: 0px 0px;
   margin: 0px 0px;
-  width: 100px;
-  background-color: hotpink;
+  width: 36px;
+  background-color: #757bd3;  
 }
 
 .deleteButton {
-  background-color: limegreen;
+  padding: 8px 0px 0px 4px;
+  width: 24px;
+  height: 24px;
   cursor: pointer;
 }
 
 .task {
-  width: 500px;
+  width: 564px;
   padding: 10px 24px;
   font-size: 16px;
   cursor: pointer;
