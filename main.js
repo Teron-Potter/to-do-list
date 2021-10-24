@@ -14,30 +14,35 @@
 //appendNewTaskToDom(taskDescription: string, completed: boolean = false) -> void';
 const appendNewTaskToDom = (taskInput, completed = false) => {
   const taskListUl = document.querySelector("#taskList");
-  if (!taskListUl) { 
+  if (!taskListUl) {
     console.log("Parent element not found");
     return;
   }
   const newListTask = document.createElement("li");
-    newListTask.classList.add("flexBoxList");
-    if (!completed) {
-      newListTask.innerHTML = `
+  newListTask.classList.add("flexBoxList");
+  if (!completed) {
+    newListTask.innerHTML =
+      `
         <div class="task taskDefault">` +
-          taskInput + `
+      taskInput +
+      `
         </div>
         <div class="controls">
           <div class="deleteButton"><img src="./images/trash.svg" alt="Delete Button" /></div>
         </div>
-        `;}
-    newListTask.innerHTML = `
+        `;
+  } else
+  newListTask.innerHTML =
+    `
     <div class="task taskComplete">` +
-      taskInput + `
+    taskInput +
+    `
     </div>
     <div class="controls">
       <div class="deleteButton"><img src="./images/trash.svg" alt="Delete Button" /></div>
     </div>
     `;
-    taskListUl.appendChild(newListTask);
-}
+  taskListUl.appendChild(newListTask);
+};
 
-appendNewTaskToDom("git bread", true);
+appendNewTaskToDom("git bread", false);
