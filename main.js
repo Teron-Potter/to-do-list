@@ -42,8 +42,8 @@ const appendNewTaskToDom = (taskInput, completed = false) => {
       <div class="deleteButton"><img src="./images/trash.svg" alt="Delete Button" /></div>
     </div>
     `;
-    taskListUl.appendChild(newListTask);
   }
+  taskListUl.appendChild(newListTask);
 };
 
 appendNewTaskToDom("git bread", false);
