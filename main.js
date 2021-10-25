@@ -1,6 +1,4 @@
 const formInput = document.querySelector("#addForm");
-const formButton = document.querySelector("#addButton");
-const userTaskInput = formInput.value;
 
 //appendNewTaskToDom(taskDescription: string, completed: boolean = false) -> void';
 const appendNewTaskToDom = (taskInput, completed = false) => {
@@ -36,11 +34,13 @@ const appendNewTaskToDom = (taskInput, completed = false) => {
   }
   taskListUl.appendChild(newListTask);
 };
-//Call to add test task "git bread" to list as not completed.
-appendNewTaskToDom("git bread", false);
 
 const handleNewTask = () => {
-  //shit goes here
+  return formInput.value;
 }
 
-formButton.addEventListener("click", ()=> console.log("test"));
+//submitThingy//.addEventListener("click", handleNewTask());
+
+//Call to add test task "git bread" to list as not completed.
+//appendNewTaskToDom(handleNewTask(), false);
+
