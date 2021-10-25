@@ -1,15 +1,6 @@
-// //alert("Javascript has been included successfully");
-
-// // //const tasks = [{
-// //     content: "Take out the trash.",
-// //     completed: true
-// //   }, {
-// //     content: "Brush your teeth.",
-// //     completed: false
-// //   }, {
-// //     content: "Take over the world.",
-// //     completed: false
-// // }];
+const formInput = document.querySelector("#addForm");
+const formButton = document.querySelector("#addButton");
+const userTaskInput = formInput.value;
 
 //appendNewTaskToDom(taskDescription: string, completed: boolean = false) -> void';
 const appendNewTaskToDom = (taskInput, completed = false) => {
@@ -45,22 +36,11 @@ const appendNewTaskToDom = (taskInput, completed = false) => {
   }
   taskListUl.appendChild(newListTask);
 };
-
 //Call to add test task "git bread" to list as not completed.
-//appendNewTaskToDom("git bread", false);
+appendNewTaskToDom("git bread", false);
 
 const handleNewTask = () => {
-  const formInput = document.querySelector("#addForm");
-  if (!formInput) {
-    console.log("Parent element not found");
-    return;
-  }
-  const formButton = document.querySelector("#addButton");
-  if (!formButton) {
-    console.log("Parent element not found");
-    return;
-  }
-  const userTaskInput = formInput.value;
-  formButton.preventDefault;
-  formButton.addEventListener("click", ()=> console.log("test"));
+  //shit goes here
 }
+
+formButton.addEventListener("click", ()=> console.log("test"));
