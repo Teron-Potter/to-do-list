@@ -1,15 +1,15 @@
 //BLUE //YELLOW //PURPLE //GREEN //RED //Highligher Plugin settings.json uses regex that can be edited.
 
-//B: 3s1 write a function that adds an item to the DOM {2}
-Function will have the signature of appendNewItemToDom(itemDescription: string, completed: boolean = false) -> void
-DoD: you can call appendNewItemToDom("get bread"); a new item appears in the list with uncomopleted status
-  calling appendNewItemToDom("get bread, true); a new item appears in the list with completed status
-
 //B: 3s4: create a handler for "add new item" form {2}
 create function handleNewItem and connect it to the form
 The function should collect values from the form and call function from 3s1
 blocked by 3s1, 3s3
 DoD: when the field is filled in and the button is clicked, the new item should appear at the bottom of the list, the page should NOT reload
+
+//G: 3s1 write a function that adds an item to the DOM {2}
+Function will have the signature of appendNewItemToDom(itemDescription: string, completed: boolean = false) -> void
+DoD: you can call appendNewItemToDom("get bread"); a new item appears in the list with uncomopleted status
+  calling appendNewItemToDom("get bread, true); a new item appears in the list with completed status
 
 //G: 3s3: Spike: learn about HTML events and handling them {3}
 Passing functions as arguments (higher order functions\ callbacks)

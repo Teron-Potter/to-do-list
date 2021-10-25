@@ -1,4 +1,5 @@
 const formInput = document.querySelector("#addForm");
+const addNewForm = document.querySelector("#fuckingForm");
 
 //appendNewTaskToDom(taskDescription: string, completed: boolean = false) -> void';
 const appendNewTaskToDom = (taskInput, completed = false) => {
@@ -35,12 +36,12 @@ const appendNewTaskToDom = (taskInput, completed = false) => {
   taskListUl.appendChild(newListTask);
 };
 
-const handleNewTask = () => {
-  return formInput.value;
+//handlers handle events and can recieve e which is provided from event listener. 
+//e can be named anything you want, e is convention. (e can be defined elsewhere, common name for error)
+const handleNewTask = (e) => {
+  e.preventDefault();
+  appendNewTaskToDom(e.target.elements.addForm.value);
+  e.target.elements.addForm.value = "";
 }
 
-//submitThingy//.addEventListener("click", handleNewTask());
-
-//Call to add test task "git bread" to list as not completed.
-//appendNewTaskToDom(handleNewTask(), false);
-
+addNewForm.addEventListener("submit", handleNewTask);
