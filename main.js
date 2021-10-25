@@ -24,7 +24,7 @@ const appendNewTaskToDom = (taskInput, completed = false) => {
     newListTask.innerHTML =
       `
         <div class="task taskDefault">` +
-      taskInput +
+      taskInput + //can use ${} instead of +
       `
         </div>
         <div class="controls">
@@ -46,4 +46,21 @@ const appendNewTaskToDom = (taskInput, completed = false) => {
   taskListUl.appendChild(newListTask);
 };
 
-appendNewTaskToDom("git bread", false);
+//Call to add test task "git bread" to list as not completed.
+//appendNewTaskToDom("git bread", false);
+
+const handleNewTask = () => {
+  const formInput = document.querySelector("#addForm");
+  if (!formInput) {
+    console.log("Parent element not found");
+    return;
+  }
+  const formButton = document.querySelector("#addButton");
+  if (!formButton) {
+    console.log("Parent element not found");
+    return;
+  }
+  const userTaskInput = formInput.value;
+  formButton.preventDefault;
+  formButton.addEventListener("click", ()=> console.log("test"));
+}
