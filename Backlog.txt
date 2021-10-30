@@ -4,13 +4,6 @@ Project: To-Do List
 
 //Backlog Refinement//
 
-3s1 write a function that adds an item to the DOM   // 2
-Function will have the signature of appendNewItemToDom(itemDescription: string, completed: boolean = false) -> void
-DoD:
-you can call appendNewItemToDom("get bread"); a new item appears in the list with uncomopleted status
-calling appendNewItemToDom("get bread, true); a new item appears in the list with completed status
-Special case: list is completely empty before call
-
 3s2 item rendering should not be hardcoded in HTML, but rather in JS // 5
 Move data to the data sturcture as indicated below
 write a function to iterate over the structure and call appendNewItemToDom to append itemns to the list
@@ -19,34 +12,17 @@ function sigature is loadData(data: <object defined below>) -> void
 Blocked by: 3s1
 
 const tasks = [{
-    content: "Take out the trash.",
-    completed: true
+    "content": "Take out the trash.",
+    "completed": true
   }, {
-    content: "Brush your teeth.",
-    completed: false
+    "content": "Brush your teeth.",
+    "completed": false
   }, {
-    content: "Take over the world.",
-    completed: false
+    "content": "Take over the world.",
+    "completed": false
 }];
 
 DoD as website loads, the list of items is displayed that hasn't been hardcoded into HTML
-
-3s3: Spike: learn about HTML events and handling them \\3
-Must be familiar with the following
-Passing functions as arguments (higher order functions)
-Functions that are called outside of context
-attaching handlers to specific events
-"click", "submit", "scroll" basic events
-Event data structure
-Accessing the DOM element after event dispatch
-Reading values from form field element
-DoD: be able to confidently attach an event handler to any element and explain a possible use case
-
-3s4: create a handler for "add new item" form   // 2
-create function handleNewItem and connect it to the form
-The function should collect values from the form and call function from 3s1
-blocked by 3s1, 3s3
-DoD: when the field is filled in and the button is clicked, the new item should appear at the bottom of the list, the page should NOT reload
 
 3s5: adjust styling for better user experience // 2
 DOD:
@@ -57,13 +33,24 @@ Delete button should be clearly visible and obvious to it's function
 Add hover effects to line items, delete button, and add new button
 no unused/unstyled items or empty space
 
-Item 6: Default array for list items
-DOD: Structure contains initial data, data is rendered in the main div on page load, all items should show their respective status
-
 draft for future tickets
 
-* delete handler
-* status change handler
+4s1: create a handler for "delete" button
+create function deleteItem, and set it as a handler for delete button
+the function will have the following signature deleteItem(itemIndex: number) -> void
+Ex.: deleteItem(2) // this means delete third item
+DOD: When delete button is clicked the item disappears from the dom
+FLAG: this is blocked until the data gets ingested by the dom, pending estimate
+Blocked by 3s2
+
+4s2: create a handler for switching item status
+create function toggleStatus
+the function will have the following signature: toggleStatus(itemIndex: number) -> void
+The function will switch the item status and re-render the dom
+Ex.: toggleItem(2) // this will switch the third item from uncompleted to completed or vice versa
+DOD: When a list item is clicked, it's appearance changes to reflect it's new status 
+Blocked by 3s2
+
 * MVP deployment 
 
 ==================END OF REFINEMENT
