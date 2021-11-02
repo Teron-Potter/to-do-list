@@ -2,7 +2,7 @@ const formInput = document.querySelector("#addForm");
 const addNewForm = document.querySelector("#fuckingForm");
 
 //appendNewTaskToDom(taskDescription: string, completed: boolean = false) -> void';
-const appendNewTaskToDom = (taskInput, completed = false) => {
+const appendNewTaskToDom = (taskInput, completed = true) => {
   const taskListUl = document.querySelector("#taskList");
   if (!taskListUl) {
     console.log("Parent element not found");
@@ -14,11 +14,11 @@ const appendNewTaskToDom = (taskInput, completed = false) => {
     newListTask.innerHTML =
       `
         <div class="task taskDefault">` +
-      taskInput + //can use ${} instead of +
+      taskInput +
       `
         </div>
         <div class="controls">
-          <div class="deleteButton"><img src="./images/trash.svg" alt="Delete Button" /></div>
+          <div class="deleteButton"><i class="fas fa-trash"></i></div>
         </div>
         `;
   } else {
@@ -29,7 +29,7 @@ const appendNewTaskToDom = (taskInput, completed = false) => {
       `
     </div>
     <div class="controls">
-      <div class="deleteButton"><img src="./images/trash.svg" alt="Delete Button" /></div>
+      <div class="deleteButton"><i class="fas fa-trash"></i></div>
     </div>
     `;
   }

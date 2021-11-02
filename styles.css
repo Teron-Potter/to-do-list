@@ -32,18 +32,23 @@ input[type="text"]:focus {
 }
 
 #headerBox {
+  -webkit-text-stroke: 0.4px;
   text-align: center;
   font-size: 24px;
-  font-weight: bold;
-  background-color: #f2f2f2;
-  border-bottom: 2px solid #000000;
+  color: #ffffff;
+  background-color: #303699;
 }
 
 .controls {
   padding: 0px 0px;
   margin: 0px 0px;
   width: 36px;
-  background-color: #757bd3;  
+  background-color: #5860ce;
+  border-bottom: 1px solid #464ca0;
+}
+
+.controls:hover {
+  background-color: #c54545;
 }
 
 .deleteButton {
@@ -51,6 +56,9 @@ input[type="text"]:focus {
   width: 24px;
   height: 24px;
   cursor: pointer;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
 }
 
 .task {
@@ -70,6 +78,7 @@ input[type="text"]:focus {
 }
 
 .taskComplete {
+  text-decoration: line-through;
   background-image: linear-gradient(to bottom right, #e0ffe4, #9effbe);
 }
 
@@ -78,9 +87,12 @@ input[type="text"]:focus {
 }
 
 .formDiv {
+  text-align: center;
   padding: 8px 8px;
   font-size: 16px;
-  background-image: linear-gradient(#bdbdbd, #666666);
+  background-color: #ffffff;
+  background-image: linear-gradient(to bottom right, #f8f8f8, #e9e9e9);
+  /* background-image: linear-gradient(#bdbdbd, #666666); */
 }
 
 #addForm {
@@ -97,21 +109,20 @@ input[type="text"]:focus {
   width: 25%;
   padding: 2px 8px;
   margin: 0px 0px;
-  border: 2px solid #000000;
+  border: 2px solid #303699;
   border-radius: 2px;
-  background-color: #000000;
+  background-color: #303699;
   color: #ffffff;
   font-size: 16px;
-  /* box-sizing: border-box; */
 }
 
 #addButton:hover {
   width: 25%;
   padding: 2px 8px;
   margin: 0px 0px;
-  border: 2px solid #ffffff;
+  border: 2px solid #303699;
   border-radius: 2px;
-  background-color: #000000;
+  background-color: #5860CE;
   color: #ffffff;
   font-size: 16px;
   cursor: pointer;

@@ -1,4 +1,6 @@
-3s2 item rendering should not be hardcoded in HTML, but rather in JS // 5
+//BLUE //YELLOW //PURPLE //GREEN //RED //Highligher Plugin settings.json uses regex that can be edited.
+
+//B 3s2 item rendering should not be hardcoded in HTML, but rather in JS // 5
 Move data to the data sturcture as indicated below
 write a function to iterate over the structure and call appendNewItemToDom to append itemns to the list
 call the function on load
@@ -18,14 +20,14 @@ const tasks = [{
 
 DoD as website loads, the list of items is displayed that hasn't been hardcoded into HTML
 
-3s5: adjust styling for better user experience // 2
+//G 3s5: adjust styling for better user experience // 2
 DOD:
-items should be rectangular and distinct
-text should be easily readable
-item status should be distinct, use common knowledge symbolism for complete or incomplete (strikethough/green-red/icons) OR not AND
-Delete button should be clearly visible and obvious to it's function
-Add hover effects to line items, delete button, and add new button
-no unused/unstyled items or empty space
+//G items should be rectangular and distinct
+//G text should be easily readable
+//G item status should be distinct, use common knowledge symbolism for complete or incomplete (strikethough/green-red/icons) OR not AND
+//G Delete button should be clearly visible and obvious to it's function
+//G Add hover effects to line items, delete button, and add new button
+//G no unused/unstyled items or empty space
 
 4s3: deploy project to gh pages // 1
 DoD the site is live and is accessible via GitHUB url
