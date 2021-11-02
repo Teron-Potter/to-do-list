@@ -1,6 +1,6 @@
 //BLUE //YELLOW //PURPLE //GREEN //RED //Highligher Plugin settings.json uses regex that can be edited.
 
-//B: 3s4: create a handler for "add new item" form {2}
+//G: 3s4: create a handler for "add new item" form {2}
 create function handleNewItem and connect it to the form
 The function should collect values from the form and call function from 3s1
 blocked by 3s1, 3s3
