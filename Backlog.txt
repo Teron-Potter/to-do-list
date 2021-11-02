@@ -51,7 +51,22 @@ Ex.: toggleItem(2) // this will switch the third item from uncompleted to comple
 DOD: When a list item is clicked, it's appearance changes to reflect it's new status 
 Blocked by 3s2
 
-* MVP deployment 
+4s3: Learn the REALTIME DATABASE by firebase (or a viable equivalent) enough to store and retrieve data (spike!) // 8
+DoD: Demonstrate knowledge of CRUD operatons on a database using a sandbox file
+Must be familiar with following topics:
+* Firebase data organization and storage (objects vs arrays)
+* Working with JSON (Stringify and Parse)
+* Importing json data to the database
+* Installing and using the firebase javascript library
+* Inserting new items into a collection
+* Deleting items from collection
+* Editing items in a collection
+* Retrieving items
+
+
+
+
+
 
 ==================END OF REFINEMENT
 

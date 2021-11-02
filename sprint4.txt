@@ -1,0 +1,31 @@
+3s2 item rendering should not be hardcoded in HTML, but rather in JS // 5
+Move data to the data sturcture as indicated below
+write a function to iterate over the structure and call appendNewItemToDom to append itemns to the list
+call the function on load
+function sigature is loadData(data: <object defined below>) -> void
+Blocked by: 3s1
+
+const tasks = [{
+    "content": "Take out the trash.",
+    "completed": true
+  }, {
+    "content": "Brush your teeth.",
+    "completed": false
+  }, {
+    "content": "Take over the world.",
+    "completed": false
+}];
+
+DoD as website loads, the list of items is displayed that hasn't been hardcoded into HTML
+
+3s5: adjust styling for better user experience // 2
+DOD:
+items should be rectangular and distinct
+text should be easily readable
+item status should be distinct, use common knowledge symbolism for complete or incomplete (strikethough/green-red/icons) OR not AND
+Delete button should be clearly visible and obvious to it's function
+Add hover effects to line items, delete button, and add new button
+no unused/unstyled items or empty space
+
+4s3: deploy project to gh pages // 1
+DoD the site is live and is accessible via GitHUB url
