@@ -1,5 +1,16 @@
 const formInput = document.querySelector("#addForm");
 const addNewForm = document.querySelector("#fuckingForm");
+const taskArray = [{
+  "task": "This task it populated from an array of objects.",
+  "completed": true
+}, {
+  "content": "As is this one!",
+  "completed": false
+}, {
+  "content": "Yep, this one too...",
+  "completed": false
+}];
+
 
 //appendNewTaskToDom(taskDescription: string, completed: boolean = false) -> void';
 const appendNewTaskToDom = (taskInput, completed = true) => {
@@ -44,4 +55,12 @@ const handleNewTask = (e) => {
   e.target.elements.addForm.value = "";
 }
 
+const appendNewItemToDom = (taskArray) => {
+  for (let count = 0; count < taskArray.length; count++) {
+    console.log(taskArray[count]);
+  }
+}
+
+
+appendNewItemToDom(taskArray);
 addNewForm.addEventListener("submit", handleNewTask);

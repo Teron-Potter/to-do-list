@@ -1,11 +1,11 @@
 //BLUE //YELLOW //PURPLE //GREEN //RED //Highligher Plugin settings.json uses regex that can be edited.
 
 //B 3s2 item rendering should not be hardcoded in HTML, but rather in JS // 5
-Move data to the data sturcture as indicated below
+//G Move data to the data sturcture as indicated below
 write a function to iterate over the structure and call appendNewItemToDom to append itemns to the list
 call the function on load
 function sigature is loadData(data: <object defined below>) -> void
-Blocked by: 3s1
+//G Blocked by: 3s1
 
 const tasks = [{
     "content": "Take out the trash.",
@@ -29,5 +29,5 @@ DOD:
 //G Add hover effects to line items, delete button, and add new button
 //G no unused/unstyled items or empty space
 
-4s3: deploy project to gh pages // 1
+//B 4s3: deploy project to gh pages // 1
 DoD the site is live and is accessible via GitHUB url
